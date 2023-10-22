@@ -32,8 +32,7 @@ export function ContactList() {
         height="80"
         width="80"
         color="#1d44dd"
-        ariaLabel="circles-loading"
-        wrapperStyle={{}}
+        ariaLabel="circles-loading"       
         wrapperClass=""
         visible={true}
         />

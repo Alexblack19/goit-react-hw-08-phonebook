@@ -1,73 +1,100 @@
-import { createGlobalStyle } from 'styled-components';
-import styled from 'styled-components';
-import 'modern-normalize';
-import phonebook from '../image/phonebook.webp';
+import styled from '@emotion/styled';
+import { Form, Field } from 'formik';
+import { NavLink } from 'react-router-dom';
 
-export const GlobalStyle = createGlobalStyle`  
-body {  
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;  
-  background-image: url(${phonebook});  
-  background-position: 50% 50%;  
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-h1,
-h2,
-h3, 
-p {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-ul {  
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px; 
-}  
+export const StyledNavLink = styled(NavLink)`
+  padding: 16px 0;
+  font-size: 18px;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transform: scale(1);
+  transition: transform 200ms ease-out;
+  ::after {
+    content: '';
+    display: block;
+    transform: scaleX(0);
+    height: 2px;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: transform 200ms ease-out;
+  }
+  &.active {
+    transform: scale(1.25);
+    ::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 30px;
+      transform: scaleX(1);
+      background-color: #fff;
+    }
+  }
 `;
 
-export const Container = styled.div`
-  max-width: 440px;
-  min-height: 600px;
-  margin-top: 30px;
+export const MainForm = styled(Form)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+`;
+
+export const Input = styled(Field)`
+  outline: 0;
+  width: 365px;
+  margin-bottom: 10px;
+  padding: 5px;
+`;
+
+export const Label = styled.label`
+  display: block;
+  margin-bottom: 10px;
+`;
+
+export const Button = styled.button`
+  border: 1px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+`;
+export const List = styled.ul`
+  border-radius: 5px;
+  padding: 20px;
+`;
+
+export const Find = styled.div`
+  width: 240px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+`;
+
+export const FindInput = styled.input`
+  outline: 0;
+  width: 350px;
+  padding: 5px;
+`;
+export const Section = styled.section`
+  padding: 20px 20px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px;
-  font-size: 18px;
-  border-radius: 10px;
-  background-image: radial-gradient(
-    circle at 50% -20.71%,
-    #ffffff 0,
-    #fffffa 16.67%,
-    #fbf5e4 33.33%,
-    #f2e6cd 50%,
-    #ead7b6 66.67%,
-    #e3c9a2 83.33%,
-    #ddbb8f 100%
-  );
-  box-shadow: 5px 5px 5px 0px rgba(179, 179, 179, 1);
-  background-color: #c9b6ac;
-`;
-
-export const MainTitle = styled.h1`
-  font-size: 36px;
-  text-align: center;
 `;
 
 export const Title = styled.h2`
-  font-size: 28px;
   text-align: center;
+  margin-bottom: 10px;
 `;
 
-export const Text = styled.p`
-  text-align: center;
-  font-weight: 600;
+export const Item = styled.li`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 `;

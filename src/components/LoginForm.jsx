@@ -30,7 +30,7 @@ export const LoginForm = () => {
       dispatch(logIn({ email, password }));
     }
   };
-  
+
   const handleChange = e => {
     const { name, value } = e.currentTarget;
     switch (name) {

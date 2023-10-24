@@ -16,22 +16,24 @@ const Home = () => {
       maxWidth="md"
     >
       <Typography
-        color="#1976d2"
+        color="#46957A"
         textAlign="center"
         component="h1"
         variant="h1"
       >
         PHONEBOOK
       </Typography>
-      <Typography textAlign="center" component="h2" variant="h3">
-        This is a {''}
-        <Typography color="#1976d2" component="span" variant="h3">
-          phonebook
-        </Typography>
-        {''} with simple registration for your personal use.
+      <Typography
+        textAlign="center"
+        component="h2"
+        variant="h3"
+        color="#444654"
+      >
+        A phone book with registration designed for recording and storing
+        personal contacts.
       </Typography>
-      <Typography component="h2" variant="h5">
-        This individual project was made during{' '}
+      <Typography textAlign="center" component="h2" variant="h5">
+        Individual project completed during the study of the React module at{' '}
         <Box
           mr="35px"
           ml="35px"
@@ -79,7 +81,6 @@ const Home = () => {
             IT
           </Typography>{' '}
         </Box>
-        Fullstack courses.
       </Typography>
     </Container>
   );

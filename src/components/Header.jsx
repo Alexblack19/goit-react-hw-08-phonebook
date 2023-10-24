@@ -12,7 +12,7 @@ export const Header = () => {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ backgroundColor: "#46957A" }}>
         <Container>
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
             <Box sx={{ display: 'flex', gap: 3 }}>

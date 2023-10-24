@@ -158,7 +158,7 @@ export const ContactModal = ({ name, number, id, open, onClose }) => {
               />
               <Button
                 fullWidth
-                sx={{ fontSize: '15px' }}
+                sx={{ fontSize: '15px'}}
                 variant="outlined"
                 type="submit"
                 disabled={

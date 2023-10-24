@@ -29,12 +29,12 @@ export function ContactList() {
     >
       {isLoading && (
         <Circles
-        height="80"
-        width="80"
-        color="#1d44dd"
-        ariaLabel="circles-loading"       
-        wrapperClass=""
-        visible={true}
+          height="80"
+          width="80"
+          color="#38B3A5"
+          ariaLabel="circles-loading"
+          wrapperClass=""
+          visible={true}
         />
       )}
       {error && (

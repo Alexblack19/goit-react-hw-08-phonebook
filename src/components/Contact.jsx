@@ -23,14 +23,14 @@ export const Contact = ({ contact: { id, name, number } }) => {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        border: 'solid 1px #1976d2',
+        border: 'solid 1px #38B3A5',
         borderRadius: '7px',
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <ListItemAvatar>
           <Avatar
-            sx={{ bgcolor: '#1976d2' }}
+            sx={{ bgcolor: '#38B3A5' }}
             alt={name}
             src="/static/images/avatar/1.jpg"
           />
@@ -49,6 +49,8 @@ export const Contact = ({ contact: { id, name, number } }) => {
         <Fab
           onClick={() => handleDelete(id)}
           sx={{
+            width:"46px",
+            height:"46px",
             bgcolor: '#ff1d1d',
             mr: 1,
             ml: 1,
@@ -63,9 +65,11 @@ export const Contact = ({ contact: { id, name, number } }) => {
         <Fab
           onClick={handleOpen}
           sx={{
-            bgcolor: '#1976d2',
+            width:"46px",
+            height:"46px",
+            bgcolor: '#38B3A5',
             '&:hover': {
-              bgcolor: '#0d42d3',
+              bgcolor: '#46957A',
             },
           }}
           aria-label="edit"

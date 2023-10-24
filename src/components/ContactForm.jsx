@@ -100,7 +100,7 @@ export function ContactForm() {
       }}
     >
       <Typography component="h1" variant="h4">
-        New contact
+        Add contact
       </Typography>
       <Box noValidate component="form" onSubmit={handleSubmit} mt={2}>
         <Grid container spacing={2}>

@@ -17,24 +17,24 @@ const authSlice = createSlice({
         state.token = action.payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(register.rejected, (state, action) => state)
+      .addCase(register.rejected, (state) => state)
       .addCase(logIn.pending, state => state)
       .addCase(logIn.fulfilled, (state, action) => {
         state.user = action.payload.user;
         state.token = action.payload.token;
         state.isLoggedIn = true;
       })
-      .addCase(logIn.rejected, (state, action) => state)
+      .addCase(logIn.rejected, (state) => state)
       .addCase(logOut.pending, state => {
         state.isLoading = true;
       })
-      .addCase(logOut.fulfilled, (state, action) => {
+      .addCase(logOut.fulfilled, (state) => {
         state.user = { name: null, email: null };
         state.token = null;
         state.isLoggedIn = false;
       })
-      .addCase(logOut.rejected, (state, action) => state)
-      .addCase(refresh.pending, (state, action) => {
+      .addCase(logOut.rejected, (state) => state)
+      .addCase(refresh.pending, (state) => {
         state.isRefreshing = true;
       })
       .addCase(refresh.fulfilled, (state, action) => {
@@ -42,7 +42,7 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
         state.isRefreshing = false;
       })
-      .addCase(refresh.rejected, (state, action) => {
+      .addCase(refresh.rejected, (state) => {
         state.isRefreshing = false;
       });
   },

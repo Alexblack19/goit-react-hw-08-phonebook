@@ -15,6 +15,6 @@ export const validatePassword = password => {
 };
 
 export const validateName = name => {
-  const regex = /^[a-zA-Zа-яА-Я]+(([' \-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
+  const regex = /^[a-zA-Zа-яА-Я]+((['-][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$/;
   return regex.test(name);
 };

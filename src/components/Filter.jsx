@@ -34,7 +34,6 @@ export function Filter() {
         onChange={onChangeFilter}
         id="filled-error"
         label="Filter"
-        variant="filled"
         color="success"
       />
     </Box>

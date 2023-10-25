@@ -148,7 +148,7 @@ export const RegisterForm = () => {
         </Button>
         <Grid container justifyContent="center">
           <Grid item>
-            <Link href="/goit-react-hw-08-phonebook/login" variant="body1" sx={{color: "#46957A"}}>
+            <Link href="/goit-react-hw-08-phonebook/login" variant="body1" sx={{color: "#46957A", textDecorationColor: "#9ea0a9"}}>
               Already have an account? Log In
             </Link>
           </Grid>

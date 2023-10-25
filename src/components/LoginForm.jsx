@@ -92,7 +92,7 @@ export const LoginForm = () => {
         </Button>
         <Grid sx={{ textAlign: 'center' }}>
           <Grid item>
-            <Link href="/goit-react-hw-08-phonebook/register" variant="body1" sx={{color: "#46957A"}}>
+            <Link href="/goit-react-hw-08-phonebook/register" variant="body1" sx={{color: "#46957A", textDecorationColor: "#9ea0a9"}}>
               {"Don't have an account? Register"}
             </Link>
           </Grid>

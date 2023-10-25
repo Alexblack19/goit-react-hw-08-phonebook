@@ -11,6 +11,7 @@ const Home = () => {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
+        marginTop: "150px"
       }}
       component="main"
       maxWidth="md"

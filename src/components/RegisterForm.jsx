@@ -95,6 +95,7 @@ export const RegisterForm = () => {
               autoComplete="off"
               onChange={handleChange}
               error={nameError}
+              color="success"
               {...(nameError && {
                 helperText: 'This is a required field',
               })}
@@ -111,6 +112,7 @@ export const RegisterForm = () => {
               autoComplete="off"
               onChange={handleChange}
               error={emailError}
+              color="success"
               {...(emailError && { helperText: 'Your email is invalid' })}
             />
           </Grid>
@@ -127,6 +129,7 @@ export const RegisterForm = () => {
               autoComplete="off"
               onChange={handleChange}
               error={passwordError}
+              color="success"
               {...(passwordError && {
                 helperText:
                   'Password minimum length must be 8 and contain at least 1 big and 1 small letter and 1 number ',
@@ -139,12 +142,13 @@ export const RegisterForm = () => {
           fullWidth
           variant="contained"
           sx={{ mt: 3, mb: 2 }}
+          color="success"
         >
           Register
         </Button>
         <Grid container justifyContent="center">
           <Grid item>
-            <Link href="/goit-react-hw-08-phonebook/login" variant="body2">
+            <Link href="/goit-react-hw-08-phonebook/login" variant="body1" sx={{color: "#46957A"}}>
               Already have an account? Log In
             </Link>
           </Grid>

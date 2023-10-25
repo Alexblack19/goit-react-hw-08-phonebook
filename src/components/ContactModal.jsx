@@ -110,7 +110,7 @@ export const ContactModal = ({ name, number, id, open, onClose }) => {
         <Fade in={open}>
           <Box sx={style}>
             <Fab
-              color="primary"
+              color="success"
               sx={{
                 position: 'absolute',
                 top: '10px',
@@ -145,6 +145,7 @@ export const ContactModal = ({ name, number, id, open, onClose }) => {
                 type="text"
                 onChange={handleChange}
                 value={newName}
+                color="success"
               />
               <TextField
                 autoComplete="off"
@@ -155,6 +156,7 @@ export const ContactModal = ({ name, number, id, open, onClose }) => {
                 type="tel"
                 onChange={handleChange}
                 value={newNumber}
+                color="success"
               />
               <Button
                 fullWidth
@@ -167,6 +169,7 @@ export const ContactModal = ({ name, number, id, open, onClose }) => {
                   (name.trim() === newName.trim() && number.trim()) ===
                     newNumber.trim()
                 }
+                color="success"
               >
                 Update
               </Button>

@@ -43,13 +43,13 @@ export function ContactList() {
         </Typography>
       )}
       {visibleContacts.length === 0 && !isLoading && filter && (
-        <Typography mt="20px" component="p" variant="h4">
+        <Typography mt="20px" component="p" variant="h4" sx={{fontSize:"26px", marginBottom:"20px"}}>
           Contacts with filter "{filter}" not found
         </Typography>
       )}
       {visibleContacts.length === 0 && !isLoading && !filter && (
-        <Typography mt="20px" component="p" variant="h4">
-          Phonebook is empty
+        <Typography mt="20px" component="p" variant="h4" sx={{fontSize:"26px", marginBottom:"20px"}}>
+          No contacts
         </Typography>
       )}
 

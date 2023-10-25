@@ -30,7 +30,7 @@ const Home = () => {
         color="#444654"
       >
         A phone book with registration designed for recording and storing
-        personal contacts.
+        personal contacts
       </Typography>
       <Typography textAlign="center" component="h2" variant="h5">
         Individual project completed during the study of the React module at{' '}

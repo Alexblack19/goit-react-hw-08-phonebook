@@ -59,6 +59,7 @@ export const LoginForm = () => {
           autoFocus
           autoComplete="off"
           error={emailError}
+          color="success"
           {...(emailError && {
             helperText: 'This is a required field',
           })}
@@ -75,6 +76,7 @@ export const LoginForm = () => {
           id="password"
           autoComplete="off"
           error={passwordError}
+          color="success"
           {...(passwordError && {
             helperText: 'This is a required field',
           })}
@@ -84,12 +86,13 @@ export const LoginForm = () => {
           fullWidth
           variant="contained"
           sx={{ mt: 3, mb: 3 }}
+          color="success"
         >
           Log In
         </Button>
         <Grid sx={{ textAlign: 'center' }}>
           <Grid item>
-            <Link href="/goit-react-hw-08-phonebook/register" variant="body2">
+            <Link href="/goit-react-hw-08-phonebook/register" variant="body1" sx={{color: "#46957A"}}>
               {"Don't have an account? Register"}
             </Link>
           </Grid>

@@ -116,6 +116,7 @@ export function ContactForm() {
               type="text"
               onChange={handleChange}
               error={nameError}
+              color="success"
               {...(nameError && {
                 helperText:
                   'Name may contain only letters, apostrophe, dash and spaces.',
@@ -134,6 +135,7 @@ export function ContactForm() {
               type="tel"
               onChange={handleChange}
               error={numberError}
+              color="success"
               {...(numberError && {
                 helperText:
                   'Number must be digits and can contain spaces, dashes, parentheses and can start with +.',
@@ -149,7 +151,7 @@ export function ContactForm() {
           <Fab
             sx={{ width: 60, height: 60 }}
             type="submit"
-            color="primary"
+            color="success"
             aria-label="add"
           >
             <PersonAddIcon fontSize="large" />

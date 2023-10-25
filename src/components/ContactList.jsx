@@ -61,6 +61,7 @@ export function ContactList() {
           gap: 1,
           mt: 2,
           maxWidth: '900',
+          marginBottom: "20px"
         }}
       >
         {visibleContacts.map(contact => {

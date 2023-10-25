@@ -30,7 +30,7 @@ export const Contact = ({ contact: { id, name, number } }) => {
       <Box sx={{ display: 'flex', alignItems: 'center' }}>
         <ListItemAvatar>
           <Avatar
-            sx={{ bgcolor: '#38B3A5'}}
+            sx={{ bgcolor: '#38B3A5' }}
             alt={name}
             src="/static/images/avatar/1.jpg"
           />
@@ -41,7 +41,7 @@ export const Contact = ({ contact: { id, name, number } }) => {
           sx={{ display: 'inline', fontSize: { xs: '14px', sm: '23px' } }}
           color="text.primary"
         >
-          {name}:{" "}{number}
+          {name}: {number}
         </Typography>
       </Box>
 
@@ -49,8 +49,8 @@ export const Contact = ({ contact: { id, name, number } }) => {
         <Fab
           onClick={() => handleDelete(id)}
           sx={{
-            width:"46px",
-            height:"46px",
+            width: '46px',
+            height: '46px',
             bgcolor: '#ff1d1d',
             mr: 1,
             ml: 1,
@@ -65,8 +65,8 @@ export const Contact = ({ contact: { id, name, number } }) => {
         <Fab
           onClick={handleOpen}
           sx={{
-            width:"46px",
-            height:"46px",
+            width: '46px',
+            height: '46px',
             bgcolor: '#38B3A5',
             '&:hover': {
               bgcolor: '#46957A',

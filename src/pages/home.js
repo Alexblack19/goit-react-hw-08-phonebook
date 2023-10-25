@@ -11,7 +11,7 @@ const Home = () => {
         display: 'flex',
         flexWrap: 'wrap',
         justifyContent: 'center',
-        marginTop: "150px"
+        marginTop: '150px',
       }}
       component="main"
       maxWidth="md"
@@ -21,6 +21,7 @@ const Home = () => {
         textAlign="center"
         component="h1"
         variant="h1"
+        marginBottom="15px"
       >
         PHONEBOOK
       </Typography>
@@ -29,12 +30,13 @@ const Home = () => {
         component="h2"
         variant="h3"
         color="#444654"
+        marginBottom="15px"
       >
         A phone book with registration designed for recording and storing
         personal contacts
       </Typography>
       <Typography textAlign="center" component="h2" variant="h5">
-        Individual project completed during the study of the React module at{' '}
+        Individual project completed during the study of the React module at {' '}
         <Box
           mr="35px"
           ml="35px"
